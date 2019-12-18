@@ -1,1 +1,369 @@
+@font-face {
+    font-family: 'Aeroport';
+    src: local('Aeroport'), local('Aeroport-regular'), url('Res/fonts/Aeroport-regular.woff') format('woff'), url('Res/fonts/Aeroport-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
+@font-face {
+    font-family: 'Aeroport';
+    src: local('Aeroport-bold'), url('Res/fonts/Aeroport-bold.woff') format('woff'), url('Res/fonts/Aeroport-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Aeroport;
+    background-color: #fff;
+    line-height: 1;
+    overflow-x: hidden;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+}
+
+header {
+    height: 50px;
+    background: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+}
+
+.gridx2 {
+    display: flex;
+    justify-content: center;
+}
+
+.home {
+    background-image: url("Res/img/edi_3680.jpg");
+    background-position: bottom;
+    height: 75vh;
+    z-index: 1;
+    background-size: cover;
+}
+
+.grid-item {
+    flex-basis: 578px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px;
+}
+
+.grid-item.with-heading {
+    justify-content: space-between;
+}
+
+.home .grid-item {
+    padding: 0;
+}
+
+.logo, .heading {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.home-logo, .home h1 {
+    width: 80%;
+    transform: translateX(10%);
+}
+
+.home h1 {
+    margin-top: 39px;
+    font-family: Aeroport;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 125%;
+    color: #FFFFFF;
+}
+
+.tehnovatsink-today {
+    min-height: 50vh;
+    background-color: #fff;
+    margin: 50px 0px;
+}
+
+.tehnovatsink-today .img-outter {
+    width: 100%;
+}
+
+.tehnovatsink-today .grid-item:last-of-type{
+    padding-left: 0;
+}
+
+.today-img {
+    height: 100%;
+    max-width: 100%;
+    box-sizing: content-box;
+    box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.25);
+    object-fit: cover;
+}
+
+.block-heading {
+    display: flex;
+    flex-direction: column;
+    width: 225px;
+}
+
+.block-heading h3{
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 154%;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: -0.04em;
+}
+
+.block-heading h2{
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 109%;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: -0.01em;
+}
+
+.block-heading__top {
+    display: flex;
+    position: relative;
+}
+
+.block-heading__top::after {
+    content: "";
+    position: relative;
+    background-color: #83C229;
+    top: 22px;
+    left: 5px;
+    height: 5px;
+    width: 100%;
+}
+
+.tehnovatsink-today ul{
+    margin-top: 10px;
+    width: 80%;
+}
+
+.tehnovatsink-today li{
+    font-size: 16px;
+    line-height: 125%;
+    color: #666666;
+}
+
+.our-technologies {
+    min-height: 90vh;
+    background-color: #222222;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+
+}
+
+.our-technologies .logo-part {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 26vw;
+}
+
+.our-technologies .block-heading {
+    flex-basis: 30%;
+    align-items: center;
+    align-self: center;
+    width: auto;
+    justify-content: center;
+}
+
+.our-technologies .gridx2 {
+    flex-basis: 70%;
+}
+
+.our-technologies .block-heading h2, .our-technologies .block-heading h3 {
+    align-self: center;
+    color: #fff;
+}
+
+.our-technologies .square {
+    margin-top: 22px;
+    width: 28px;
+    height: 28px;
+    background: #94DC2D;
+}
+
+.our-technologies .grid-item + .grid-item{
+    border-left: 2px solid #747474;
+}
+
+.our-technologies h3 {
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: -0.04em;
+    color: #FFFFFF;
+}
+
+.our-technologies p {
+    font-size: 16px;
+    line-height: 125%;
+    color: #FFFFFF;
+}
+
+.our-technologies .h3-outter {
+    width: 100%;
+    max-width: calc(100% - 50px);
+    align-self: flex-end;
+    margin-bottom: 6vh;
+}
+
+.technologies-img {
+    width: 100%;
+    max-width: calc(100% - 50px);
+    height: auto;
+    object-fit: contain;
+}
+
+.technologies-img.left {
+    align-self: flex-start;
+}
+
+.technologies-img.right {
+    align-self: flex-end;
+}
+
+
+
+.our-technologies .grid-item {
+    justify-content: space-between;
+}
+
+.history {
+    margin: 50px 0px;
+}
+
+.history-img {
+    height: 100%;
+    max-width: 100%;
+    box-sizing: content-box;
+    object-fit: contain;
+}
+
+.history-img.right {
+    transform: translateX(10%);
+}
+
+.history-img.left {
+    transform: translateX(-10%);
+}
+
+.history li {
+    font-size: 16px;
+    line-height: 20px;
+    color: #666666;
+    width: 80%;
+}
+
+
+.history .ul-heading {
+    font-weight: bold;
+    color: #000000;
+}
+
+.item-text {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.history .logo {
+    justify-content: center;
+    margin: 25px;
+}
+
+.slider {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.slider__button {
+    position: relative;
+    flex-basis: 13%;
+    height: 100%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.slider__button img{
+    height: 42px;
+    width: 22px;
+}
+
+.slider__button.prev img {
+    align-self: flex-end;
+    margin-right: 28px;
+}
+
+.slider__button.next img {
+    align-self: flex-start;
+    margin-left: 28px;
+}
+
+.slider__button.disabled img{
+    opacity: 0.3;
+}
+
+.slider-item {
+    flex-basis: 45%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.slider-img {
+    width: 100.1%;
+    object-fit: contain;
+}
+
+footer {
+    height: 275px;
+    background-color: #000;
+}
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 700px) and (max-width: 991px) {
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 699px) {
+
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+
+}
