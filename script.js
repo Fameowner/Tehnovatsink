@@ -54,11 +54,11 @@ document.getElementById(`slider-num-buttons__01`).onclick = ()=>{
 
 var sliderTouch=0;
 
-document.getElementById(`slider-item`).addEventListener(`touchstart`,(e)=>{
+document.getElementById(`slider-item`).addEventListener(`touchstart`, (e)=>{
     sliderTouch = e.touches[0].clientX;
-})
+}, {passive: true})
 
-document.getElementById(`slider-item`).addEventListener(`touchend`,(e)=>{
+document.getElementById(`slider-item`).addEventListener(`touchend`, (e)=>{
     if (e.changedTouches[0].clientX > sliderTouch){
         prev();
     } else if(e.changedTouches[length].clientX < sliderTouch){
