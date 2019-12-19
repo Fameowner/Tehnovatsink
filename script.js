@@ -65,7 +65,7 @@ document.getElementById(`slider-item`).addEventListener(`touchend`, (e)=>{
         next();
     }
     return false
-})
+}, {passive: true}  )
 
 function next()
 {
