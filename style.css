@@ -28,14 +28,6 @@ body {
     text-rendering: optimizeSpeed;
 }
 
-header {
-    height: 50px;
-    background: rgba(0, 0, 0, 0.9);
-    width: 100%;
-    position: fixed;
-    z-index: 5;
-}
-
 .gridx2 {
     display: flex;
     justify-content: center;
@@ -81,7 +73,7 @@ header {
 
 .home-logo, .home h1 {
     width: 80%;
-    transform: translateX(10%);
+    transform: translateX(14.5%);
 }
 
 .home h1 {
@@ -346,12 +338,6 @@ header {
     align-self: flex-end;
 }
 
-footer {
-    height: 275px;
-    background-color: #000;
-}
-
-
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
 
@@ -409,6 +395,7 @@ footer {
 
     .today-img {
         height: auto;
+        width: inherit;
         box-shadow: none;
     }
 
@@ -439,7 +426,6 @@ footer {
 
     .logo {
         width: auto;
-        display: block;
     }
 
     .history-img{
@@ -483,7 +469,7 @@ footer {
     }
 
     .history-logo {
-        width: 100%;
+        width: 70%;
     }
 
 }
