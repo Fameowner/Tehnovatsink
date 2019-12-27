@@ -100,3 +100,9 @@ window.addEventListener("resize",()=>{
 })
 
 
+window.addEventListener("message", receiveMessage, false);
+
+function receiveMessage(event)
+{
+    return document.body.offsetHeight;
+}
